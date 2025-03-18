@@ -1,0 +1,339 @@
+
+.about {
+    height: auto;
+  }
+  
+  .about-container {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+  }
+    .about-box .wh {
+    font-size: 45px;
+    border-bottom: none !important;
+  }
+  .about-box h2 {
+    font-size: 40px;
+    border-bottom: 3px solid orange;
+  }
+  
+
+  
+  .about-box p {
+    font-size: 17px;
+  }
+  
+  .about-box .desc {
+    margin: 20px 0 24px;
+  }
+  
+  .resume-details {
+    display: none;
+  }
+  
+  .resume-details.active {
+    display: block;
+  }
+  .resume-details.experience.active {
+    display: block; 
+    
+    padding: 20px; 
+    border-radius: 10px;
+ 
+    transition: all 0.3s ease; 
+  }
+  
+
+.resume-details.experience.active .desc {
+  color: #333; 
+  font-size: 18px; 
+  line-height: 1.6; 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; 
+}
+
+
+.resume-details.experience.active .desc span {
+  font-weight: bold;
+ 
+  margin-right: 10px;
+  color: orange;
+}
+.resume-details.experience.active .desc p {
+display: block;
+text-align: left;
+margin-top: 10px; 
+}
+
+
+.resume-details.experience.active .heading {
+  font-size: 40px;
+  color: #222;
+  
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+  
+  .about-box .resume-btn {
+    margin-top: 10px;
+    width: 92%;
+    height: 60px;
+    background: rgba(224, 219, 219, 0.409);
+    border: .2rem solid rgba(255, 255, 255, 0);
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+  
+  .about-box .resume-btn.active {
+    color: orange;
+    border: 2px solid orange;
+  }
+  
+  .about-box .heading {
+    font-size: 39px;
+    text-align: left;
+    
+  }
+  
+  .heading span {
+    color: orange;
+  }
+  
+  .resume-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    gap: 20px;
+    height: 410px;
+    overflow: auto;
+  }
+  
+  .resume-list::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .resume-list::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 15px;
+  }
+  
+  .resume-list:hover::-webkit-scrollbar-thumb {
+    background: orange;
+  }
+  
+  .resume-list .resume-items {
+    display: flex;
+    flex-direction: column;
+    background: rgba(224, 219, 219, 0.409);
+    border-radius: 9px;
+    padding: 18px 13px;
+    height: calc((410px - 10px) / 2);
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  
+  .resume-items .year {
+    color: orange;
+  }
+  
+  .resume-items .name {
+    font-size: 22px;
+  }
+  
+  .resume-items.company {
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .resume-items.company::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    background: orange;
+    border-radius: 50%;
+    margin-left: -10px;
+  }
+  
+  /* Skills */
+  .skills .resume-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: auto;
+    overflow: visible;
+  }
+  
+  .skills .resume-items {
+    position: relative;
+    align-items: center;
+    height: auto;
+    background: rgba(224, 219, 219, 0.409);
+  }
+  
+  .skills .resume-items i {
+    font-size: 100px;
+    transition: .5s;
+  }
+  
+  .skills .resume-items i:hover {
+    color: orange;
+  }
+  
+  .skills .resume-items span {
+    position: absolute;
+    top: -20%;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background: black;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.9);
+    transition: .2s;
+  }
+  
+  .skills .resume-items:hover span {
+    top: -25%;
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* about-me */
+  .about-me .resume-list {
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .about-me .resume-list .resume-items {
+    height: auto;
+    padding: 0 0 5px;
+    background: transparent;
+  }
+  
+  .about-me .resume-list .resume-items p {
+    font-size: 18px;
+    color: orange;
+  }
+  
+  .about-me .resume-list .resume-items p span {
+    color: black;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For tablets and below (max-width: 900px) */
+  @media screen and (max-width: 900px) {
+    .about-container {
+      grid-template-columns: 1fr; /* Stack the columns */
+      margin: 10px;
+    }
+  
+    .about-box h2 {
+      font-size: 30px;
+    }
+  
+    .about-box p {
+      font-size: 15px;
+    }
+  
+    .about-box .resume-btn {
+      font-size: 1.4rem;
+      width: 100%;
+      height: 50px;
+    }
+  
+    .resume-list {
+      grid-template-columns: 1fr; /* Stack resume items */
+      height: auto;
+    }
+  
+    .resume-items {
+      height: auto; /* Adjust item height */
+    }
+  
+    .skills .resume-list {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust for smaller screens */
+    }
+  
+    .about-me .resume-list {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
+    }
+  }
+  
+  /* For smaller mobile screens (max-width: 480px) */
+  @media screen and (max-width: 480px) {
+    .about-box h2 {
+      font-size: 24px;
+    }
+  
+    .about-box p {
+      font-size: 14px;
+    }
+  
+    .about-box .resume-btn {
+      font-size: 1.2rem;
+      height: 45px;
+    }
+  
+    .resume-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills .resume-items i {
+      font-size: 80px;
+    }
+  
+    .skills .resume-items span {
+      font-size: 16px;
+    }
+  
+    .about-me .resume-list .resume-items p {
+      font-size: 16px;
+    }
+  }
+  
+  /* For very small mobile screens (max-width: 320px) */
+  @media screen and (max-width: 320px) {
+    .about-box h2 {
+      font-size: 20px;
+    }
+  
+    .about-box p {
+      font-size: 13px;
+    }
+  
+    .about-box .resume-btn {
+      font-size: 1rem;
+      height: 40px;
+    }
+  
+    .resume-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills .resume-items i {
+      font-size: 70px;
+    }
+  
+    .skills .resume-items span {
+      font-size: 14px;
+    }
+  
+    .about-me .resume-list .resume-items p {
+      font-size: 14px;
+    }
+  }
+  
+
+
+
+
+

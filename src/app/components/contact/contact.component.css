@@ -1,0 +1,209 @@
+
+.container {
+    margin: 90px;
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 1.3fr 1.7fr;
+    gap: 30px;
+}
+
+.container .box:first-child {
+    align-self: center;
+}
+
+.box h2 {
+    font-size: 40px;
+}
+
+.box p {
+    font-size: 15px;
+}
+
+.box p .desc {
+    margin: 10px 0 20px;
+}
+
+.box .contact-details {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.contact-details i {
+    display: inline-flex;
+    background: rgba(224, 219, 219, 0.409);
+    color: orange;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.contact-details .details p:first-child {
+    color: orange;
+    text-align: left;
+}
+
+/* Form */
+.box form {
+    background: rgba(224, 219, 219, 0.409);
+    text-align: center;
+    border-radius: 16px;
+    padding: 25px 40px 40px;
+}
+
+.box .heading {
+    font-size: 45px;
+}
+
+.box .heading span {
+    color: orange;
+}
+
+.field-box input,
+.field-box textarea {
+    width: 90%;
+    margin: 5px;
+    padding: 13px;
+    background: white;
+    border: 0px solid white;
+    border-radius: 6px;
+    font-size: 13px;
+    color: black;
+}
+
+input:focus,
+textarea:focus {
+    border-color: orange !important;
+}
+
+.red-text {
+    color: red;
+    font-size: 12px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: orange;
+    border: 3px solid orange;
+    border-radius: 40px;
+    box-shadow: 0 0 10px orange;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: orange;
+    box-shadow: none;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and below (max-width: 810px) */
+@media screen and (max-width: 810px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack the boxes vertically */
+        margin: 10px;
+    }
+
+    .box {
+        margin-bottom: 20px;
+    }
+
+    .box h2 {
+        font-size: 30px;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    .contact-details {
+        flex-direction: column; /* Stack the contact details */
+        align-items: flex-start;
+        margin: 15px 0;
+    }
+
+    .contact-details i {
+        font-size: 20px;
+    }
+
+    .contact-details .details {
+        margin-left: 0;
+    }
+
+    .field-box input,
+    .field-box textarea {
+        width: 100%; /* Inputs and textarea take full width */
+    }
+
+    .btn {
+        width: 100%; /* Make the button full width */
+    }
+}
+
+/* For smaller mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .box h2 {
+        font-size: 24px; /* Smaller heading */
+    }
+
+    .box p {
+        font-size: 13px;
+        
+    }
+   
+
+    .contact-details i {
+        font-size: 18px;
+    }
+
+    .field-box input,
+    .field-box textarea {
+        font-size: 14px; /* Make form input font slightly larger */
+    }
+
+    .btn {
+        padding: 12px 20px; /* Adjust button padding for smaller screens */
+        font-size: 14px;
+    }
+}
+
+/* For very small mobile screens (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    .container {
+        margin: 10px;
+    }
+
+    .box h2 {
+        font-size: 20px; /* Even smaller heading */
+    }
+
+    .box p {
+        font-size: 12px;
+    }
+
+    .contact-details {
+        margin: 10px 0;
+    }
+
+    .contact-details i {
+        font-size: 16px; /* Smaller icon sizes */
+    }
+
+    .field-box input,
+    .field-box textarea {
+        font-size: 14px; /* Increase font size for readability */
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}

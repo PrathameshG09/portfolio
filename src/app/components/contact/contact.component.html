@@ -1,0 +1,63 @@
+<section class="contact">
+   <div class="container">
+     <div class="box">
+        <h2>Let's work together</h2>
+        <p class="desc">Let's collaborate to bring your ideas to life with innovative and efficient web solutions. 
+            Together, we can create seamless, dynamic applications that exceed expectations and deliver real value.
+        </p>
+        <div class="contact-details">
+            <i class='bx bxs-phone bx-tada bx-rotate-180' ></i>
+            <div class="details">
+                <p class="cd">Phone</p>
+                <p>+91 8830500059</p>
+            </div>
+        </div>
+
+        <div class="contact-details">
+            <i class='bx bxl-gmail bx-tada bx-rotate-180' ></i>
+            <div class="details">
+                <p class="cd">Email</p>
+                <p>prathameshgosavi99&#64;gmail.com</p>
+            </div>
+        </div>
+
+        <div class="contact-details">
+            <i class='bx bx-map bx-tada bx-rotate-180' ></i>
+            <div class="details">
+                <p class="cd">Address</p>
+                <p>New Sangvi, Pune-411027</p>
+            </div>
+        </div>
+    </div>
+     <div class="box">
+        <form [formGroup]="messageForm">
+            <h2 class="heading">Contact <span>me!</span></h2>
+            <div class="field-box">
+                <input type="text" formControlName="name" placeholder="name">
+                <div class="red-text">
+                    @if(messageForm.controls['name'].errors?.['required'] && messageForm.controls['name'].touched){
+                    <span>required field</span>
+                }</div>                
+                <input type="email" formControlName="email" placeholder="email">
+                @if(messageForm.controls['email'].touched){
+                    <div class="red-text">
+                        @if(messageForm.controls['email'].errors?.['required']){
+                            <span>field is reqired</span>
+                        }
+                        @if(messageForm.controls['email'].errors?.['email']){
+                            <span>Enter valid email</span>
+                        }</div>}
+                <input type="text" formControlName="phone"  placeholder="phone number">
+                @if(messageForm.controls['phone'].touched){
+                    <div class="red-text">
+                        @if(messageForm.controls['phone'].errors?.['required']){
+                            <span>field is required</span>}
+                    </div>}
+                <input type="text" formControlName="esub" placeholder="Emil subject">
+                <textarea name="" id="" placeholder="Your Message" formControlName="yourMess"></textarea>
+            </div>
+            <button class="btn" [disabled]="messageForm.invalid" (click)="submitForm()">Submit</button>
+        </form>
+     </div>
+    </div>
+</section>

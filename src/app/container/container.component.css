@@ -1,0 +1,99 @@
+/* 
+
+#contact{
+    height:90vh;
+    top: 50px;
+}
+
+
+
+
+
+ @media screen and (max-width:992px) {
+    header{
+        padding: 2rem 4%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+        margin: 1px;
+    }
+}  */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section Styling */
+section {
+    width: 100%;
+    padding: 40px 20px;
+    margin: 20px 0;
+    text-align: center;
+  
+    /* border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+section h2 {
+    font-size: 2rem;
+  
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1rem;
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px 15px;
+        margin: 15px 0;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile-sized screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    section p {
+        font-size: 0.85rem;
+    }
+
+   
+}
