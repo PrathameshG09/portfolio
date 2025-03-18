@@ -114,7 +114,9 @@ nav {
    /* General Styles for Navigation */
 nav {
   background-color: #fff;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+  
+  
 }
 
 nav ul {
@@ -127,6 +129,7 @@ nav ul {
   top: 0;
   position: fixed;
   margin: 0;
+  background-color: white;
   padding: 0;
 }
 
