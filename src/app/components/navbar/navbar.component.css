@@ -224,6 +224,7 @@ nav li:first-child {
       justify-content: center;
       text-align: end;
       top: 30;
+      background-color: white;
       
   }
 
@@ -256,6 +257,7 @@ nav li:first-child {
 @media only screen and (max-width: 400px) {
   nav ul {
       padding: 0 10px;
+      background-color: white;
   }
 
   nav li {
