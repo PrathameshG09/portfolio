@@ -195,7 +195,7 @@ nav li:first-child {
   width: 100%;
   color: rgb(0, 0, 0);
   font-size: 18px;
-  margin-top: -291px;
+  
 }
 
 .sidebar a:hover {
@@ -224,7 +224,7 @@ nav li:first-child {
       justify-content: center;
       text-align: end;
      
-      background-color: #ffffff4a;
+     background-color: #ffffff33;
       
   }
 
@@ -257,7 +257,7 @@ nav li:first-child {
 @media only screen and (max-width: 400px) {
   nav ul {
       padding: 0 10px;
-      background-color: #ffffff4a;
+      background-color: white;
   }
 
   nav li {
