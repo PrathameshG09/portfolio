@@ -461,8 +461,8 @@ span::before {
         flex-direction: column-reverse;
         align-items: center;
         padding: 15px 0px 10px 10px;
-        gap: 30px;
-        margin-top: -60px;
+        gap: 20px;
+        margin-top: -20px;
     }
 
     .home-ifo h1 {
