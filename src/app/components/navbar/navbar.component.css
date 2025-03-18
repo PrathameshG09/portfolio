@@ -257,7 +257,7 @@ nav li:first-child {
 @media only screen and (max-width: 400px) {
   nav ul {
       padding: 0 10px;
-      background-color: white;
+      background-color: #ffffff4a;
   }
 
   nav li {
