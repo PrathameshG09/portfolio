@@ -223,8 +223,8 @@ nav li:first-child {
     
       justify-content: center;
       text-align: end;
-      top: 10;
-      background-color: white;
+     
+      background-color: #ffffff4a;
       
   }
 
@@ -238,7 +238,7 @@ nav li:first-child {
       position: fixed;
       top: 0;
       right: 0;
-      background-color: rgba(204, 202, 202, 0.292);
+      background-color: rgba(204, 202, 202, 0.167);
       backdrop-filter: blur(12px);
       box-shadow: none;
   }
