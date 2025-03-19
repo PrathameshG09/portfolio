@@ -482,12 +482,13 @@ span::before {
     }
 
     .cv {
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .social {
         display: block;
-        margin-top: 15px;
+        margin: 10px 40px 0 40px ;
+        /* margin */
         text-align: center;
     }
 
