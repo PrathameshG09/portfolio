@@ -206,7 +206,6 @@ margin-top: 10px;
     transform: scale(1);
   }
   
-  /* about-me */
   .about-me .resume-list {
     height: auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -227,12 +226,10 @@ margin-top: 10px;
     color: black;
   }
   
-  /* Media Queries for Responsiveness */
-  
-  /* For tablets and below (max-width: 900px) */
+
   @media screen and (max-width: 900px) {
     .about-container {
-      grid-template-columns: 1fr; /* Stack the columns */
+      grid-template-columns: 1fr;
       margin: 10px;
     }
   
@@ -264,7 +261,8 @@ margin-top: 10px;
     }
   
     .about-me .resume-list {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
+      /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
     }
   }
   
@@ -284,7 +282,8 @@ margin-top: 10px;
     }
   
     .resume-list {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+
     }
   
     .skills .resume-items i {

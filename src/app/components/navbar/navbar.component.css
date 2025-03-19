@@ -263,6 +263,9 @@ nav li:first-child {
   nav li {
       padding: 5px;
   }
+  li.cname{
+    text-overflow: 1;
+  }
 
   .sidebar a {
       font-size: 16px;
