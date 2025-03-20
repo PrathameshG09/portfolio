@@ -563,7 +563,7 @@ span::before {
         width: auto;
         height: auto;
         object-fit: cover;
-        top: 17%;
+        /* top: 17%; */
     }
 
     .home-ifo h1 {
