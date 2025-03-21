@@ -9,8 +9,9 @@
     grid-template-columns: 1fr 2fr;
     gap: 5rem;
   }
-    .about-box .wh {
+    .about-box h2 {
     font-size: 45px;
+    color: white;
     border-bottom: none !important;
   }
   .about-box h2 {
@@ -83,7 +84,7 @@ margin-top: 10px;
     background: rgba(224, 219, 219, 0.409);
     border: .2rem solid rgba(255, 255, 255, 0);
     font-size: 1.6rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 500;
     margin-bottom: 20px;
     border-radius: 9px;
@@ -178,6 +179,7 @@ margin-top: 10px;
   
   .skills .resume-items i {
     font-size: 100px;
+   /* background: white; */
     transition: .5s;
   }
   
@@ -192,8 +194,8 @@ margin-top: 10px;
     font-size: 20px;
     padding: 5px;
     border-radius: 10px;
-    color: white;
-    background: black;
+    color: rgb(1, 0, 0);
+    background: rgb(245, 243, 243);
     pointer-events: none;
     opacity: 0;
     transform: scale(.9);
@@ -215,6 +217,7 @@ margin-top: 10px;
     height: auto;
     padding: 0 0 5px;
     background: transparent;
+    align-content: left;
   }
   
   .about-me .resume-list .resume-items p {
@@ -223,7 +226,7 @@ margin-top: 10px;
   }
   
   .about-me .resume-list .resume-items p span {
-    color: black;
+    color: rgb(246, 242, 242);
   }
   
 

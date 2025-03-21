@@ -3,12 +3,13 @@ import { HomeComponent } from "../components/home/home.component";
 import { AboutComponent } from "../components/about/about.component";
 import { ContactComponent } from "../components/contact/contact.component";
 import { ActivatedRoute } from '@angular/router';
-import { SkillsComponent } from "../components/skills/skills.component";
+
+import { PortfolioComponent } from "../components/portfolio/portfolio.component";
 
 
 @Component({
   selector: 'app-container',
-  imports: [HomeComponent, AboutComponent, ContactComponent, SkillsComponent],
+  imports: [HomeComponent, AboutComponent, ContactComponent, PortfolioComponent],
   templateUrl: './container.component.html',
   styleUrl: './container.component.css'
 })
