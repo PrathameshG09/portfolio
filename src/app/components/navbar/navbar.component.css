@@ -217,7 +217,7 @@ nav li:first-child {
 .menu-button svg {
   width: 26px;
   height: 26px;
-  fill: black;
+  fill: rgb(247, 246, 246);
 }
 
 /* Media Queries for Small Devices (Tablet and Below) */
@@ -251,7 +251,10 @@ nav li:first-child {
   .menu-button {
       display: block; /* Shows the menu button */
   }
+  .sidebar a {
+         color: white;
 
+}
   /* Adjust the sidebar when shown */
   .sidebar.show-sidebar {
       display: flex;
