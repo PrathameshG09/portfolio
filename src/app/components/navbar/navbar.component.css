@@ -1,117 +1,4 @@
-/* 
-nav {  
-   
-  }
-  
-  nav ul {  
-    width: 100%;
-    list-style: none;
-    z-index: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    top: 0;
-    position: fixed;
-  }
-  
-  nav li {
-    height: 50px;
-  }
-  
-  nav a {
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: black;
-  }
-  
-  nav a:hover {
-    cursor: pointer;
-    color: orange;
-    font-weight: 500;
-  }
-  
-  nav li:first-child {
-    margin-right: auto;
-    font-size: 40px ;
-    font-weight: 700;
-    color: orange;
-  }
-  
- 
-  .sidebar {    
-    position: fixed;
-    top: 0; 
-    right: 0;
-    height: 100vh;
-    width: 200px;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    display: flex;  
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  
-  }
-  
 
-  .sidebar li {
-    width: 100%;
-  }
-  
-  .sidebar a {
-    width: 100%;
-    margin: -130px 650px;
-  }
-  
-
-  .menu-button {
-    display: none;
-  }
-  
-
-  @media only screen and (max-width: 768px) {
-    .hideOnMobile {
-      display: none;  
-      
-    } 
-  
-    .sidebar {
-      width: 100%;
-    }
-  
-    .menu-button {
-      display: block;  
-    }
-  
-
-    .sidebar.show-sidebar {
-      display: flex;  
-    }
-  }
-  
-
-  @media only screen and (max-width: 400px) {
-    .sidebar {
-      width: 100%;  
-    }
-  }
-  
-
-  @media only screen and (min-width: 769px) {
-    .sidebar {
-      display: flex;  
-    }
-  }
-  
-   */
-
-
-   /* General Styles for Navigation */
 nav {
   background-color: #fff;
   box-shadow: 3px 3px 5px rgb(0, 0, 0);
@@ -264,20 +151,75 @@ nav li:first-child {
 /* For Mobile (max-width: 400px) */
 @media only screen and (max-width: 400px) {
   nav ul {
-      padding: 0 10px;
+      /* padding: 0 10px; */
       /* background-color: white; */
   }
 
   nav li {
-      padding: 5px;
+      padding: -15px;
   }
   li.cname{
     text-overflow: 1;
   }
 
   .sidebar a {
-      font-size: 16px;      color: white;
+      font-size: 15px;      color: white;
 
+  }
+}
+
+
+@media (max-width: 375px) {
+  /* Adjust font size of the sidebar links */
+  .sidebar a {
+      font-size: 11px;
+  }
+
+  /* Hide sidebar links and show them in a collapsible or stacked format */
+  .sidebar {
+      display: none; /* Hide sidebar by default */
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding-top: 50px;
+      z-index: 1000;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(100%); /* Hide off-screen */
+  }
+
+  /* Show the sidebar when the menu button is clicked (toggle visibility) */
+  .sidebar.open {
+      transform: translateX(0); /* Slide in sidebar */
+  }
+
+  /* Update the styling for the menu button */
+  .menu-button {
+      display: block; /* Show the menu button for small screens */
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1001;
+      color: white;
+  }
+
+  /* Adjust the styling of navigation links in the sidebar */
+  .sidebar li {
+      list-style-type: none;
+      text-align: center;
+      margin: 15px 0;
+  }
+
+  /* Styling for the menu button icon */
+  .menu-button svg {
+      fill: white;
+  }
+
+  /* Hide elements that should be hidden on small screens (e.g., some links) */
+  .hideOnMobile {
+      display: none;
   }
 }
 

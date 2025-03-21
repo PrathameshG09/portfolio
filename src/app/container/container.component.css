@@ -1,25 +1,4 @@
-/* 
-
-#contact{
-    height:90vh;
-    top: 50px;
-}
-
-
-
-
-
- @media screen and (max-width:992px) {
-    header{
-        padding: 2rem 4%;
-    }
-    section{
-        padding: 10rem 3% 2rem;
-        margin: 1px;
-    }
-}  */
-
-/* General Reset */* {
+* {
     margin: 0;
     padding: 0;
 }
@@ -58,7 +37,7 @@ section p {
 
     section {
         padding: 20px 15px;
-        margin: 0; /* Remove the space between sections */
+        margin: -3%; /* Remove the space between sections */
     }
 
     section h2 {
