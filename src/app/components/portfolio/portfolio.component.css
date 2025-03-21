@@ -1,38 +1,43 @@
-.main-text{
+.main-text {
     padding-top: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.main-text h2{
+
+.main-text h2 {
     font-size: 60px;
     line-height: 1;
     text-align: center;
 }
-.main-text h2 span{
+
+.main-text h2 span {
     color: orange;
 }
-.portfolio-content{
+
+.portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 20px;
 }
-.row{
+
+.row {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
-
 }
-.row img{
+
+.row img {
     width: 100%;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
-
 }
-.layer{
+
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),rgb(0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0));
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -46,36 +51,92 @@
     padding: 0 20px;
     transition: height 0.5s;
 }
-.layer h5{
+
+.layer h5 {
     color: orange;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
-    }
-    .layer p{
-        color: rgb(255, 255, 255);
-        font-size: 1rem;
-        line-height: 1;
+}
 
-    }
-    .layer i{
-        color: orange;
-        margin-top: 20px;
-        font-size: 20px;
-        background: black;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
+.layer p {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1;
+}
 
+.layer i {
+    color: orange;
+    margin-top: 20px;
+    font-size: 20px;
+    background: black;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
 
-    }
-    .row:hover img{
-        transition: scale(1.1);
+.row:hover img {
+    transition: scale(1.1);
+}
 
+.row:hover .layer {
+    height: 100%;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .main-text h2 {
+        font-size: 40px;
     }
-    .row:hover .layer{
-        height: 100%;
+
+    .portfolio-content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+
+    .layer h5 {
+        font-size: 18px;
+    }
+
+    .layer p {
+        font-size: 0.9rem;
+    }
+
+    .layer i {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .main-text h2 {
+        font-size: 30px;
+    }
+
+    .portfolio-content {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .layer h5 {
+        font-size: 16px;
+    }
+
+    .layer p {
+        font-size: 0.85rem;
+    }
+
+    .layer i {
+        width: 40px;
+        height: 40px;
+    }
+
+    .row img {
+        border-radius: 4px;
+    }
+}
