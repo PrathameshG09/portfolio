@@ -16,7 +16,7 @@
     border-bottom: none !important;
   }
   .about-box h2 {
-    font-size: 40px;
+    
     border-bottom: 3px solid orange;
   }
   
@@ -27,7 +27,7 @@
   }
   
   .about-box .desc {
-    margin: 20px 0 24px;
+    margin: -5px 0 24px;
   }
   
   .resume-details {
@@ -72,7 +72,7 @@ margin-top: 10px;
 
 .resume-details.experience.active .heading {
   font-size: 40px;
-  color: #222;
+  color: #f5f3f3;
   
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -272,12 +272,12 @@ margin-top: 10px;
   
   /* For smaller mobile screens (max-width: 480px) */
   @media screen and (max-width: 480px) {
-    .about-box h2 {
-      font-size: 24px;
+    .about-box .heading {
+      font-size: 16px;
     }
   
     .about-box p {
-      font-size: 14px;
+      font-size: 13px;
     }
   
     .about-box .resume-btn {
@@ -291,7 +291,7 @@ margin-top: 10px;
     }
   
     .skills .resume-items i {
-      font-size: 80px;
+      font-size: 70px;
     }
   
     .skills .resume-items span {

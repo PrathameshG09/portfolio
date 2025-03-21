@@ -9,25 +9,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent  {
-  
-  
-// showSidebar(): void {
-//   const sidebar = document.querySelector<HTMLElement>('.sidebar');
-//   if (sidebar) {
-//       sidebar.style.display = 'flex'; 
-//   }
-// }
-
-
-// hideSidebar(): void {
-//   const sidebar = document.querySelector<HTMLElement>('.sidebar');
-//   if (sidebar) {
-//       sidebar.style.display = 'none';
-//   }
-// }
-// closeSidebarOnNav(): void {
-//   this.hideSidebar(); 
-// }
 
 
 
